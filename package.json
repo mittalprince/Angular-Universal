@@ -2,6 +2,8 @@
   "name": "angular-tour-of-heroes",
   "version": "0.0.0",
   "scripts": {
+    "start:heroku": "node dist/server",
+    "postinstall": "npm run build:ssr",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
