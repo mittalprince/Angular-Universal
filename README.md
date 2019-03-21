@@ -87,3 +87,8 @@ In this case, we want to make sure that our dist server is built and ready for d
 
         To do this, add another line under the “scripts” object of our package.json file and put in the following code: 
         ```“postinstall”: “npm run build:ssr”```.
+
+### Audit Report before SSR and PWA and  after SSR and PWA
+
+![](image/beforeAudit.png)
+![](image/afterAudit.png)
