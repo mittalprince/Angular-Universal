@@ -88,6 +88,40 @@ In this case, we want to make sure that our dist server is built and ready for d
         To do this, add another line under the “scripts” object of our package.json file and put in the following code: 
         ```“postinstall”: “npm run build:ssr”```.
 
+## What is PWA ?
+
+A Progressive Web App or PWA is a web application that has a set of capabilities (similar to native apps) which provide an app-like experience to users. PWAs need to meet a set of essential requirements that we’ll see next. PWAs are similar to native apps but are deployed and accessible from web servers via URLs, so we don’t need to go through app stores.
+
+`A pwa need to be:`
+
+* Progressive:    Work for every user, regardless of browser choice, because they are built with progressive enhancement as a core tenet.
+* Responsive:
+Fit any form factor, desktop, mobile, tablet, or whatever is next.
+* Connectivity independent
+Enhanced with service workers to work offline or on low-quality networks.
+* App-like:
+Use the app-shell model to provide app-style navigation and interactions.
+* Fresh:
+Always up-to-date thanks to the service worker update process.
+* Safe:
+Served via HTTPS to prevent snooping and ensure content has not been tampered with.
+* Discoverable:
+Are identifiable as “applications” thanks to W3C manifests and service worker registration scope allowing search engines to find them.
+* Re-engageable:
+Make re-engagement easy through features like push notifications.
+* Installable:
+Allow users to “keep” apps they find most useful on their home screen without the hassle of an app store.
+* Linkable:
+Easily share via URL and not require complex installation.
+
+## Add Progressive Web App (pwa) in angular
+
+```$ ng add @angular/pwa```
+
+The command automatically adds PWA features to our Angular application, such as:
+* A `manifest.json` file,
+* Different sizes of icons in the `src/assets/icons` folder,
+* The `ngsw-worker.js` service worker.
 ### Audit Report before SSR and PWA and  after SSR and PWA
 
 ![](image/beforeAudit.png)

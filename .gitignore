@@ -1,5 +1,5 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
-
+#for help https://www.smashingmagazine.com/2018/09/pwa-angular-6/
 # compiled output
 /dist
 /tmp
